@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ book.title }}</title>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+    <p>Autor: {{ book.author }}</p>
+    <p>Descripción: {{ book.description }}</p>
+    <p>Fecha de publicación: {{ book.publish_date }}</p>
+    <p>ISBN: {{ book.isbn }}</p>
+    <a href="{% url 'books' %}">Volver a la lista</a>
+    <a href="{% url 'updatebook' book.id %}">Editar</a>
+
+</body>
+</html>
